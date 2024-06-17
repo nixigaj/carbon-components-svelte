@@ -4,6 +4,8 @@ import type { SvelteHTMLElements } from "svelte/elements";
 type RestProps = SvelteHTMLElements["input"];
 
 export interface TextInputProps extends RestProps {
+  tabIndexNum?: number
+
   /**
    * Set the size of the input
    * @default undefined

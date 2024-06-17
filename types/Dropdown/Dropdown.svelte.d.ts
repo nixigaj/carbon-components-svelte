@@ -14,6 +14,8 @@ export interface DropdownItem {
 type RestProps = SvelteHTMLElements["div"];
 
 export interface DropdownProps extends RestProps {
+  tabIndexNum?: number
+
   /**
    * Set the dropdown items
    * @default []

@@ -7,6 +7,8 @@
    * @slot {{ item: DropdownItem; index: number; }}
    */
 
+  export let tabIndexNum = 0
+
   /**
    * Set the dropdown items
    * @type {ReadonlyArray<DropdownItem>}
@@ -231,7 +233,7 @@
       bind:this="{ref}"
       type="button"
       class:bx--list-box__field="{true}"
-      tabindex="0"
+      tabindex={tabIndexNum}
       aria-expanded="{open}"
       on:keydown="{(e) => {
         const { key } = e;

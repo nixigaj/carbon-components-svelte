@@ -4,6 +4,8 @@
    * @event {null | number | string} input
    */
 
+  export let tabIndexNum = 0
+
   /**
    * Set the size of the input
    * @type {"sm" | "xl"}
@@ -193,6 +195,7 @@
           : helperText
           ? helperId
           : undefined}"
+        tabindex={tabIndexNum}
         disabled="{disabled}"
         id="{id}"
         name="{name}"
